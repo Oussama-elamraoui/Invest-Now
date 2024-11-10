@@ -1,0 +1,32 @@
+.map {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .legend-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.checkbox-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+input[type="checkbox"] {
+    accent-color: orange;
+}

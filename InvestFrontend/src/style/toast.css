@@ -1,0 +1,37 @@
+/* toast.css */
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    min-width: 300px;
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  .toast-success {
+    background-color: #28a745;
+  }
+  
+  .toast-warning {
+    background-color: #ffc107;
+  }
+  
+  .toast-error {
+    background-color: #dc3545;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

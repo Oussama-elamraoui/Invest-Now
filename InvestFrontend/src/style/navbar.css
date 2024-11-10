@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Orange */
+    padding: 20px 60px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    width: 96%;
+    max-width: 97%;
+    padding-right: 50px;
+}
+
+/* Space for the fixed navbar */
+.navbar-space {
+    height: 80px; /* Same as navbar height */
+}
+
+/* Logo Section */
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* User Section */
+.navbar-user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    /* margin-right: 20px; */
+    right: 15px;
+}
+
+.navbar-username {
+    margin-right: 10px;
+}
+
+.navbar-user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Dropdown Menu */
+.navbar-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+}
+
+.navbar-dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-dropdown-item:hover {
+    background-color: #FFA500; /* Orange */
+    color: white;
+}
+.logo {
+    height: 35px;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .modal p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-confirm, .btn-cancel {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn-confirm {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+  }
+  
+  .btn-cancel {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+  }
+  
+  .btn-confirm:hover, .btn-cancel:hover {
+    opacity: 0.9;
+  }
+  .navbar-dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-dropdown-item:hover {
+    background-color: #FFA500; /* Orange */
+    color: white;
+}
+
+.dropdown-icon {
+    margin-right: 10px; /* Space between icon and text */
+    color: inherit; /* Inherit text color to ensure icons change color on hover */
+    transition: color 0.3s ease;
+}

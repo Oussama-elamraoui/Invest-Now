@@ -1,0 +1,37 @@
+.button-get-started {
+    position: relative;
+    padding: 1.3em 1.6em;
+    border: 1px solid #FFA500; /* Orange color */
+    border-radius: 25px 7px;
+    color: #FFA500; /* Orange color */
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: all .7s ease;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    /*background: linear-gradient(45deg, #FF6E1A, #FFA500);  Orange gradient background */
+    
+    &:after {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background: linear-gradient(45deg, #2E5E95, #3B83D1, #435B8E); /* Blue tones */
+        width: 150px;
+        height: 30px;
+        content: '';
+        transform: translate(-50%);
+        border-radius: 25px 7px;
+        filter: blur(20px);
+        z-index: -1;
+    }
+    
+    &:hover {
+        border-radius: 7px 25px;
+        /*background: linear-gradient(45deg, #4b9fff 0%, #FFA500 25%, orange 25%,#ff9558 50%, #FF6E1A  100%);  Orange to blue gradient */
+        letter-spacing: .2em;
+        border: 1px solid white;
+        color: #FCFCFC; /* White text */
+        background-color: #FFA500;
+    }
+}

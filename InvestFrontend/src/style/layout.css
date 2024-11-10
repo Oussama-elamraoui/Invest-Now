@@ -1,0 +1,33 @@
+/* layout.css */
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sidebar {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .map {
+    height: 100%;
+    width: 100%;
+  }
+  

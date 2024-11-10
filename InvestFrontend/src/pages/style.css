@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .container h1 {
+    display: none; /* Hide the heading if you want the map to take the full page */
+  }
+  
+  .container > div {
+    flex-grow: 1;
+    display: flex;
+  }
+  
+  .map {
+    flex-grow: 1;
+  }
+  

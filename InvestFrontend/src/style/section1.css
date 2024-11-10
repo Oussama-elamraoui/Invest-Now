@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+.text-container{
+    width: 60%;
+
+}
+.text-container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+.text-container .item {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.text-container .item::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #FFA500;
+}
+.conclusion {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.images-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    animation: slideIn 1s ease-out forwards;
+    /* width: 40%; */
+
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: lightblue;
+    transform: rotate(-15deg);
+    transition: transform 0.5s;
+}
+
+.image1 {
+    background-image: url('../assets/images/home/img1.png');
+}
+
+.image2 {
+    background-image: url('../assets/images/home/img2.jpg');
+    transform: rotate(15deg);
+}
+
+.image3 {
+    background-image: url('../assets/images/home/img3.jpg');
+    transform: rotate(-10deg);
+}
+
+.image4 {
+    background-image: url('../assets/images/home/img4.png');
+    transform: rotate(5deg);
+}
+
+.image:hover {
+    transform: rotate(0);
+}
+
+.text-container {
+    max-width: 40%;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
